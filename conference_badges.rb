@@ -38,11 +38,11 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-def printer(array)
-  batch_badge_creator(array).each do |id|
+def printer(attendees)
+  batch_badge_creator(attendees).each do |id|
     puts id
   end
-assign_rooms(array).each do |id|
+assign_rooms(attendees).each do |id|
   puts id
 end
 end
