@@ -40,8 +40,10 @@ end
 
 def printer(attendees)
   ans = []
+  counter = 1
   attendees.each do |attendee|
-puts ans.push (batch_badge_creator(attendees) && assign_rooms(attendees))
+    ans.push ("Hello, #{name}! You'll be assigned to room #{counter}")
+    counter += 1
 end
-  puts ans
-end 
+return ans
+end
