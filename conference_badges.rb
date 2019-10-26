@@ -38,12 +38,11 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-def printer(attendees)
-  ans = []
-  counter = 1
-  attendees.each do |attendee|
-    ans.push ("Hello, #{name}! You'll be assigned to room #{counter}")
-    counter += 1
-end
-return ans
+def printer(array)
+  batch_badge_creator(array).each do |id|
+    puts id
+  end
+assign_rooms(array).each do |id|
+  puts id
+end 
 end
